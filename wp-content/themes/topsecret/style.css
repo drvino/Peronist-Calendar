@@ -1,0 +1,431 @@
+/*
+Theme Name: TopSecret
+Description: Calendario
+Version: 1.0
+Author: Florencia Mincucci
+*/
+
+.screen-reader-text {
+     position: absolute;
+     left: -1000em;
+}
+
+a img {
+	border: none;
+}
+
+a:visited {
+	color: #666;
+}
+
+
+acronym, abbr {
+	border-bottom: 1px dashed #333;
+}
+
+acronym, abbr, span.caps {
+	font-size: 90%;
+	letter-spacing: .07em;
+}
+
+acronym, abbr {
+	cursor: help;
+}
+
+blockquote {
+	border-left: 5px solid #ccc;
+	margin-left: 1.5em;
+	padding-left: 5px;
+}
+
+body {
+	background: #DDEEF6;
+	border: 2px solid #565;
+	border-bottom: 1px solid #565;
+	border-top: 3px solid #565;
+	color: #000;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+cite {
+	font-size: 90%;
+	font-style: normal;
+}
+
+h2 {
+	border-bottom: 1px dotted #ccc;
+	font: 95% "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	margin: 15px 0 2px 0;
+	padding-bottom: 2px;
+}
+
+h3 {
+	border-bottom: 1px dotted #eee;
+	font-family: "Times New Roman", Times, serif;
+	margin-top: 0;
+}
+
+ol#comments li p {
+	font-size: 100%;
+}
+
+p, li, .feedback {
+	font: 90%/175% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: -1px;
+}
+
+/* classes used by the_meta() */
+ul.post-meta {
+	list-style: none;
+}
+
+ul.post-meta span.post-meta-key {
+	font-weight: bold;
+}
+
+.credit {
+	background: #C3E8F9;
+	color: #666;
+	font-size: 11px;
+	padding: 6px;
+	text-align: center;
+}
+
+.credit a:link, .credit a:hover {
+	color: #666;
+}
+
+.feedback {
+	color: #ccc;
+	text-align: right;
+	clear: both;
+}
+
+.meta {
+	font-size: .75em;
+}
+
+.meta li, ul.post-meta li {
+	display: inline;
+}
+
+.meta ul {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.meta, .meta a {
+	color: #808080;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+.storytitle {
+	margin: 0;
+}
+
+.storytitle a {
+	text-decoration: none;
+}
+
+#commentform #author, #commentform #email, #commentform #url, #commentform textarea {
+	background: #fff;
+	border: 1px solid #333;
+	padding: .2em;
+}
+
+#commentform textarea {
+	width: 100%;
+}
+
+#commentlist li ul {
+	border-left: 1px solid #ddd;
+	font-size: 110%;
+	list-style-type: none;
+}
+
+#commentlist li .avatar {
+	float: right;
+	margin-right: 25px;
+	border: 1px dotted #ccc;
+	padding: 2px;
+}
+
+#content {
+    margin: 30px 0;
+}
+
+#header {
+    background: #C3E8F9;
+}
+
+#navBar {
+    width: 804px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#navBar #logo {
+    float: left;
+}
+
+#header ul {
+    width: 500px;
+    float: right;
+    overflow: hidden;
+    margin: 65px 0 0 0;
+}
+
+#header li {
+    float: right;
+    margin-left: 20px;
+}
+
+#header a {
+	color: #666;
+	text-decoration: none;
+}
+
+#header a:hover {
+	text-decoration: underline;
+}
+
+#menu {
+	background: #fff;
+	border-left: 1px dotted #ccc;
+	border-top: 3px solid #e0e6e0;
+	padding: 20px 0 10px 30px;
+	position: absolute;
+	right: 2px;
+	top: 0;
+	width: 11em;
+}
+
+#menu form {
+	margin: 0 0 0 13px;
+}
+
+#menu input#s {
+	width: 80%;
+	background: #eee;
+	border: 1px solid #999;
+	color: #000;
+}
+
+#menu ul {
+	color: #ccc;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 3px;
+	text-transform: lowercase;
+}
+
+#menu ul li {
+	font: italic normal 110% 'Times New Roman', Times, serif;
+	letter-spacing: 0.1em;
+	margin-top: 10px;
+	padding-bottom: 2px; /*border-bottom: dotted 1px #ccc;*/
+}
+
+#menu ul ul {
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+#menu ul ul li {
+	border: 0;
+	font: normal normal 12px/115% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: 0;
+	margin-top: 0;
+	padding: 0;
+	padding-left: 12px;
+}
+
+#menu ul ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+#menu ul ul li a:hover {
+	border-bottom: 1px solid #809080;
+}
+
+#menu ul ul ul.children {
+	font-size: 142%;
+	padding-left: 4px;
+}
+
+#wp-calendar {
+	border: 1px solid #ddd;
+	empty-cells: show;
+	font-size: 14px;
+	margin: 0;
+	width: 90%;
+}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+}
+
+#wp-calendar a {
+	display: block;
+	text-decoration: none;
+}
+
+#wp-calendar a:hover {
+	background: #e0e6e0;
+	color: #333;
+}
+
+#wp-calendar caption {
+	color: #999;
+	font-size: 16px;
+	text-align: left;
+}
+
+#wp-calendar td {
+	color: #ccc;
+	font: normal 12px 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: normal;
+	padding: 2px 0;
+	text-align: center;
+}
+
+#wp-calendar td.pad:hover {
+	background: #fff;
+}
+
+#wp-calendar td:hover, #wp-calendar #today {
+	background: #eee;
+	color: #bbb;
+}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+}
+
+/* Captions & aligment */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions & aligment */
+
+/* RESET */
+/* ----------------------------------------- */
+
+/* Global reset */
+/* Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img { border:0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
+ol, ul, li { list-style:none }
+caption, th { text-align:left }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
+q:before, q:after { content:''}
+:focus { outline: 0;}
+
+/* Global reset-RESET */
+/* The below restores some sensible defaults */
+strong { font-weight:bold }
+em { font-style:italic }
+a img { border:none } /* Gets rid of IE's blue borders */
+
+/*************/
+
+#calendario {
+    width: 804px;
+    margin: 0 auto;
+}
+
+#calendario ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+#calendario li, #calendario a {
+    width: 200px;
+    height: 200px;
+}
+
+#calendario li {
+    float: left;
+    overflow: hidden;
+    margin: 0 1px 1px 0;
+}
+
+#calendario a {
+    display: block;
+}
+
+#static {
+    width: 804px;
+    margin: 0 auto;
+}
+
+a.enero { background: url(images/enero.jpg) no-repeat 0 0; }
+a.febrero { background: url(images/febrero.jpg) no-repeat 0 0; }
+a.marzo { background: url(images/marzo.jpg) no-repeat 0 0; }
+a.abril { background: url(images/abril.jpg) no-repeat 0 0; }
+a.mayo { background: url(images/mayo.jpg) no-repeat 0 0; }
+a.junio { background: url(images/junio.jpg) no-repeat 0 0; }
+a.julio { background: url(images/julio.jpg) no-repeat 0 0; }
+a.agosto { background: url(images/agosto.jpg) no-repeat 0 0; }
+a.septiembre { background: url(images/septiembre.jpg) no-repeat 0 0; }
+a.octubre { background: url(images/octubre.jpg) no-repeat 0 0; }
+a.noviembre { background: url(images/noviembre.jpg) no-repeat 0 0; }
+a.diciembre { background: url(images/diciembre.jpg) no-repeat 0 0; }
